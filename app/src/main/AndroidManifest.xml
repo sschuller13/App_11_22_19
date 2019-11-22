@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".List1Activity"></activity>
+        <activity android:name=".InvListItems" />
+        <activity android:name=".AssignCode" />
+        <activity android:name=".CreateOrAppend" />
+        <activity android:name=".updateProductCount" />
+        <activity android:name=".ScanCodeFound" />
+        <activity
+            android:name=".add_inventory"
+            android:label="@string/title_activity_add_inventory"
+            android:parentActivityName=".AddInventory"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myapplication.AddInventory" />
+        </activity>
+        <activity android:name=".editaccount" />
+        <activity android:name=".Main_Signup" />
+        <activity android:name=".reports" />
+        <activity android:name=".managephysicalcount" />
+        <activity android:name=".managesysteminventory" />
+        <activity android:name=".manageusers" />
+        <activity android:name=".Managecompany" />
+        <activity
+            android:name=".signupcompany"
+            android:label="@string/title_activity_signupcompany"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".userpanel"
+            android:label="@string/title_activity_userpanel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".adminpanel"
+            android:label="@string/title_activity_adminpanel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ownerpanel"
+            android:label="@string/title_activity_ownerpanel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".personal_infoActivity"
+            android:label="@string/title_activity_personal_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".signupActivity"
+            android:label="@string/title_activity_signup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".manage_inventory">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

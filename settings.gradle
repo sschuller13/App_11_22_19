@@ -1,0 +1,1 @@
+include ':app', ':sqljdbc41', ':sqljdbc42', ':jtds-1.3.1'
